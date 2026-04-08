@@ -123,4 +123,7 @@ body {
 
 .cube-button:hover .cube div span { background: linear-gradient(#151515, #ff0057); }
 .cube-button:hover .cube .top { color: #ff0057; }
-.cube-button:hover .cube .top::before { background: #ff0057; box-shadow: 0 0 7vw rgba(255, 0, 87, 0.8); }
+.cube-button:hover .cube .top::before {
+    background: #ff0057;
+    box-shadow: 0 0 7vw rgba(255, 0, 87, 0.8);
+}
