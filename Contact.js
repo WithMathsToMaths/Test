@@ -2,7 +2,7 @@ const monthNames = ["January", "February", "March", "April", "May", "June", "Jul
 let currentSelection = new Date();
 
 // CHANGER CECI PAR TON EMAIL
-const MON_EMAIL = "ton-email@exemple.com";
+const MON_EMAIL = "withmathstomaths@gmail.com";
 
 const mSelect = document.getElementById('monthSelector');
 const ySelect = document.getElementById('yearSelector');
@@ -60,7 +60,7 @@ function submitBooking() {
         "Time: " + hour + ":" + min
     );
 
-    window.location.href = `mailto:${withmathstomaths@gmail.com}?subject=${sujet}&body=${corps}`;
+    window.location.href = `mailto:${MON_EMAIL}?subject=${sujet}&body=${corps}`;
 }
 
 // LOGIQUE D'ENVOI CONTACT
@@ -74,7 +74,7 @@ function submitContact() {
     const sujet = encodeURIComponent("Inquiry: " + sujetInput);
     const corps = encodeURIComponent("From: " + email + "\n\nMessage:\n" + message);
 
-    window.location.href = `mailto:${withmathstomaths@gmail.com}?subject=${sujet}&body=${corps}`;
+    window.location.href = `mailto:${MON_EMAIL}?subject=${sujet}&body=${corps}`;
 }
 
 mSelect.onchange = ySelect.onchange = buildCalendar;
